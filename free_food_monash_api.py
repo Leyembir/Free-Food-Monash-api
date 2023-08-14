@@ -1,15 +1,12 @@
 import subprocess
 import time
 from fastapi import FastAPI, HTTPException, File, UploadFile, Depends, Body
-from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.responses import JSONResponse, 
 import jwt
 from security import SECRET_KEY, ALGORITHM
 from free_food_monash import creating_json_object
 from mangum import Mangum
-from starlette.middleware import Middleware
-from fastapi.staticfiles import StaticFiles
-from user import UserCreate, create_user, verify_user_credentials
-from security import get_password_hash, verify_password, create_access_token, generate_token_for_user
+from security import get_password_hash, verify_password, generate_token_for_user
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
