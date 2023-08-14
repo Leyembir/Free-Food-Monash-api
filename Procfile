@@ -1,0 +1,1 @@
+web: gunicorn -w 4 -k uvicorn.worlers.UvicornWorker free_food_monash_api:app 
