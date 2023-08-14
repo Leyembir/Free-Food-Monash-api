@@ -2,10 +2,8 @@ fastapi==0.101.1
 mangum==0.17.0
 opencv_python==4.7.0.72
 passlib==1.7.4
-Pillow==9.3.0
 Pillow==10.0.0
 pydantic==1.10.10
-PyJWT==2.8.0
 PyJWT==2.8.0
 pytesseract==0.3.10
 Requests==2.31.0
