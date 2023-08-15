@@ -9,7 +9,7 @@ import cv2
 import re
 import json
     #Define path to image
-PATH_TO_IMAGE ="./.apt/usr/share/tesseract-ocr/4.00/tessdata/free_food1.jpg"
+PATH_TO_IMAGE =".images/free_food1.jpg"
 
 
 preprocess_type = "thresh"  # Replace with the desired preprocessing type
