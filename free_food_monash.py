@@ -36,7 +36,7 @@ def ocr_core(PATH_TO_IMAGE = "./images/free_food1.jpg"
     img = Image.open(PATH_TO_IMAGE)
 
     # Extract text from image
-    text = pytesseract.image_to_string(image) 
+    text = pytesseract.image_to_string(img) 
 
     new_text = text.splitlines()
     new_text = [x for x in new_text if x != '']
