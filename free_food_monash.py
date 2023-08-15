@@ -26,11 +26,11 @@ image = cv2.imread(PATH_TO_IMAGE)
 
 def ocr_core(PATH_TO_IMAGE = "./images/free_food1.jpg"
 ):
-    # Define path to tessaract.exe
-    path_to_tesseract = "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
+    # # Define path to tessaract.exe
+    # path_to_tesseract = "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
 
-    # Point tessaract_cmd to tessaract.exe
-    pytesseract.tesseract_cmd = path_to_tesseract
+    # # Point tessaract_cmd to tessaract.exe
+    # pytesseract.tesseract_cmd = path_to_tesseract
 
     # Open image with PIL
     img = Image.open(PATH_TO_IMAGE)
