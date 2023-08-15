@@ -1,11 +1,11 @@
-import os
+
 from PIL import Image
 from pytesseract import pytesseract
 import requests
-import argparse
+
 import cv2
-import os
-import ast
+
+
 import re
 import json
     #Define path to image

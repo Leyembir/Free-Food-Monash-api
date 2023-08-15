@@ -1,7 +1,7 @@
 import subprocess
 import time
 from fastapi import FastAPI, HTTPException, File, UploadFile, Depends, Body
-from fastapi.responses import JSONResponse, 
+from fastapi.responses import JSONResponse
 import jwt
 from security import SECRET_KEY, ALGORITHM
 from free_food_monash import creating_json_object
