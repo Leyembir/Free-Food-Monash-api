@@ -98,7 +98,9 @@ async def upload_photo(token: str = Depends(check_token), file: UploadFile = Fil
     # Trigger a restart by modifying a file
 
 
-    
+@app.get("/favicon.ico")
+def read_favicon():
+    raise HTTPException(status_code=404, detail="Not Found")   
 
 @app.post("/api/login")
 def login(data: LoginRequest):
