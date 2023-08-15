@@ -9,7 +9,7 @@ import cv2
 import re
 import json
     #Define path to image
-PATH_TO_IMAGE = r'C:\Users\amir0\Documents\Python project amir\\backend\\images\\free_food1.jpg'
+PATH_TO_IMAGE ="./.apt/usr/share/tesseract-ocr/4.00/tessdata/free_food1.jpg"
 
 
 preprocess_type = "thresh"  # Replace with the desired preprocessing type
@@ -24,10 +24,10 @@ image = cv2.imread(PATH_TO_IMAGE)
 
 
 
-def ocr_core(PATH_TO_IMAGE = r'C:\Users\amir0\Documents\Python project amir\\backend\\images\\free_food1.jpg'
+def ocr_core(PATH_TO_IMAGE = "./images/free_food1.jpg"
 ):
     # Define path to tessaract.exe
-    path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    path_to_tesseract = "./.apt/usr/share/tesseract-ocr/4.00/tessdata"
 
     # Point tessaract_cmd to tessaract.exe
     pytesseract.tesseract_cmd = path_to_tesseract

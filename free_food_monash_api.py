@@ -12,7 +12,7 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 from jwt import PyJWTError
 
-PATH_TO_IMAGE = r'C:\Users\amir0\Documents\Python project amir\\images'
+PATH_TO_IMAGE = "./images/free_food1.jpg"
 
 
 credentials_exception = HTTPException(
