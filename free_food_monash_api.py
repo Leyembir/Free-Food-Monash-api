@@ -43,7 +43,7 @@ class TokenData(BaseModel):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:19006"],  # Allow only this origin
+    allow_origins=["http://localhost:3000", "http://localhost:19006", "https://cerulean-brigadeiros-d7b567.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
